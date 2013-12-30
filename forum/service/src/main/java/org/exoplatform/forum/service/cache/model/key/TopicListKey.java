@@ -30,6 +30,13 @@ public class TopicListKey extends ScopeCacheKey {
     this.offset = offset;
     this.limit = limit;
   }
+  /**
+   * Gets ForumId from Filter
+   * @return
+   */
+  public String getForumId() {
+    return this.filter.forumId();
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -64,6 +71,8 @@ public class TopicListKey extends ScopeCacheKey {
     result = getHashCode(result, filter.isApproved());
     result = getHashCode(result, filter.isAdmin());
     result = getHashCode(result, filter.orderBy());
+    result = 31 * result + offset;
+    result = 31 * result + limit;
     return result;
   }
 }

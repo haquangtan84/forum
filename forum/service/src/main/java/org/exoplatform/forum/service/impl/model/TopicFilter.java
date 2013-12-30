@@ -16,20 +16,39 @@
  */
 package org.exoplatform.forum.service.impl.model;
 
-public class TopicFilter {
-  private String   categoryId;
-  private String   forumId;
-  private String   userLogin;
+import java.io.Serializable;
 
-  private String   orderBy;
+public class TopicFilter implements Serializable {
+  private static final long serialVersionUID = 1L;
+  private String   categoryId = null;
+  private String   forumId = null;
+  private String   userLogin = null;
+
+  private String   orderBy = null;
 
   private String[] viewers;
   private boolean isApproved = false;
   private boolean isAdmin = false;
+  
+  private long date = 0l;
+  private String forumPath = null;
+  
+  private String userName = null;
 
   public TopicFilter(String categoryId, String forumId) {
     this.categoryId = categoryId;
     this.forumId = forumId;
+  }
+
+  public TopicFilter(long date, String forumPath) {
+    this.forumPath = forumPath;
+    this.date = date;
+  }
+
+  public TopicFilter(String userName, boolean isAdmin, String orderBy) {
+    this.userName = userName;
+    this.orderBy = orderBy;
+    this.isAdmin = isAdmin;
   }
 
   public String categoryId() {
@@ -50,10 +69,28 @@ public class TopicFilter {
     return this;
   }
 
+  public String forumPath() {
+    return forumPath;
+  }
+  
+  public TopicFilter forumPath(String forumPath) {
+    this.forumPath = forumPath;
+    return this;
+  }
+
+  public String userName() {
+    return userName;
+  }
+
+  public TopicFilter userName(String userName) {
+    this.userName = userName;
+    return this;
+  }
+
   public String userLogin() {
     return userLogin;
   }
-
+  
   public TopicFilter userLogin(String userLogin) {
     this.userLogin = userLogin;
     return this;
@@ -74,6 +111,15 @@ public class TopicFilter {
 
   public TopicFilter orderBy(String orderBy) {
     this.orderBy = orderBy;
+    return this;
+  }
+
+  public long date() {
+    return date;
+  }
+  
+  public TopicFilter date(long date) {
+    this.date = date;
     return this;
   }
 
@@ -113,6 +159,9 @@ public class TopicFilter {
     TopicFilter f = (TopicFilter) o;
     if(isAdmin != f.isAdmin || 
         isApproved != f.isApproved ||
+        date != f.date ||
+        !equals(forumPath, f.forumPath) ||
+        !equals(userName, f.userName) ||
         !equals(forumId, f.forumId) ||
         !equals(userLogin, f.userLogin) ||
         !equals(orderBy, f.orderBy)
@@ -131,6 +180,9 @@ public class TopicFilter {
         .append(", isAdmin='").append(isAdmin).append("'")
         .append(", isApproved='").append(isApproved).append("'")
         .append(", userLogin='").append(userLogin).append("'")
+        .append(", userName='").append(userName).append("'")
+        .append(", date='").append(date).append("'")
+        .append(", forumPath='").append(forumPath).append("'")
         .append('}').toString();
   }
 }
