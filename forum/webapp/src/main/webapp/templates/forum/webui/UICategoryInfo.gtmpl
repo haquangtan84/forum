@@ -18,7 +18,7 @@
 	String[] menuViewInfos = ["ViewPublicUserInfo","PrivateMessage","ViewPostedByUser", "ViewThreadByUser"] ;
 %>
 <div id="$uicomponent.id" class="uiCategoryInfo">
-	<table id="UIListUsers" class="uiGrid table no-border-cell rounded-corners-bottom table-striped uiCollapExpand">
+	<table id="UIListUsers" class="uiTable  uiTableStriped uiTableWithoutBorder uiTableRoundedBottom uiCollapExpand">
 		<caption class="rounded-corners-top">
 			<span class="pull-right actionExpandCollapse">
 				<i class="uiIconArrowDown" rel="tooltip" data-placement="bottom" title="<%=_ctx.appRes("UIForumPortlet.label.Collapse");%>" onclick="eXo.forum.UIForumPortlet.expandCollapse(this) ;"></i>

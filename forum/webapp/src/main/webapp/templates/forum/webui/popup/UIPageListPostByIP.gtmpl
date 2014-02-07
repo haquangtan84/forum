@@ -19,7 +19,7 @@
 		<div class="resziable">
 			<div class="contentContainer">
 				<% uicomponent.renderChild(UIForumPageIterator.class) ; %>
-				<table cellspacing="0" cellpadding="0" border="0" class="uiGrid table table-hover table-striped">
+				<table cellspacing="0" cellpadding="0" border="0" class="uiTable uiTableHover uiTableStriped">
 					<thead>
 						<tr>
 							<th></th>

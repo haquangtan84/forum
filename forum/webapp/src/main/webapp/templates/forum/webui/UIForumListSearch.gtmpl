@@ -14,7 +14,7 @@
 	<% } %>
 	</div>
 	<div class="searchResult forumContainer">
-		<table class="uiGrid table no-border-cell rounded-corners-bottom table-hover table-striped">
+		<table class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder uiTableRoundedBottom">
 			<caption class="rounded-corners-top">
 				<div class="pull-right">
 					<button class="btn btn-primary" type="button" onclick="<%=uicomponent.event("AdvancedSearch")%>"><%=_ctx.appRes("UIForumPortlet.label.AdvancedSearch")%></button>

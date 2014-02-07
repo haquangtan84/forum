@@ -9,7 +9,7 @@
 	<% uiform.begin() %>
 	<div class="resizable">	
 		<div id="UITabContent" data-restPath="<%=uicomponent.getRestPath();%>" data-forumId="$forumId" class="contentContainer restInfo">
-			<table class="uiGrid uiGridFilter">
+			<table class="uiTable uiGridFilter">
 				<tbody>
 					<tr>
 						<td class="td-label">
@@ -21,7 +21,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<table class="uiGrid table table-hover table-striped table-data-viewer">
+			<table class="uiTable uiTableHover uiTableStriped  table-data-viewer">
 				<thead>
 					<tr>
 						<th class="center"><%=_ctx.appRes("UIBanIPForumManagerForm.label.BannedIP");%></th>
@@ -65,7 +65,7 @@
 					</tr>
 				</tfoot>
 			</table>
-			<table class="uiGrid typeInputIp">
+			<table class="uiTable typeInputIp">
 				<tbody>
 					<tr>
 						<td><% uiform.renderField(uiform.NEW_IP_BAN_INPUT1) ;%>*&nbsp;</td>

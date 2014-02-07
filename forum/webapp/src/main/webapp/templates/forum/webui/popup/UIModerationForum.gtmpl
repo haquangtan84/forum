@@ -14,7 +14,7 @@
 					
 					<% uicomponent.renderChild(uicomponent.SEARCH_ITERATOR); %>
 				<% } %>	
-					<table id="" class="uiGrid table table-hover table-striped">
+					<table id="" class="uiTable uiTableHover uiTableStriped">
 						<thead>
 							<tr>
 								<th style="width:15px;"><%=_ctx.appRes("UIForumListSearch.label.Type");%></th>

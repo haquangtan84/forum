@@ -86,7 +86,7 @@
     <p class="pollTime">$timeOutDate</p>
     <%} %>
      <% if(uicomponent.isGuestPermission() == false) { %> 
-			<table class="uiGrid table no-border-cell rounded-corners table-striped tableVoting">
+			<table class="uiTable uiTableWithoutBorder uiTableRounded uiTableStriped tableVoting">
 				<thead>
 					<tr>
 						<th style="padding-left: 20px;"><%=_ctx.appRes("UITopicPoll.label.PollOptions")%></th>
@@ -102,7 +102,7 @@
 				<a href="<%=uicomponent.event("Vote")%>" class="btn LightBlueStyle"><%=_ctx.appRes("UITopicPoll.label.Votenow"); %></a>
 			</div>
           <% } else { %>
-				<table id="UIGrid" class="uiGrid table rounded-corners table-striped tableVoted">
+				<table id="UIGrid" class="uiTable uiTableRounded uiTableStriped tableVoted">
 					<thead>
 						<tr>
 							<th style="width: 32%;"><%=_ctx.appRes("UITopicPoll.label.PollOptions"); %></th>

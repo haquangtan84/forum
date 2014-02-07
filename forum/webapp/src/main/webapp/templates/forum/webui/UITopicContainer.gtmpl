@@ -81,7 +81,7 @@
 	</div>
 	<div style="display:none;" id="divChecked" data-checked="<%=uicomponent.getTotalChecked()%>"><span><%=uicomponent.getTotalChecked()%></span></div>
 	<div class="forumContainer" id="UITopicContent">
-		<table class="uiGrid table no-border-cell rounded-corners-bottom table-hover table-striped">
+		<table class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder uiTableRoundedBottom">
 			<caption class="rounded-corners-top">
 				<ul class="forumToolbar pull-right">
 			

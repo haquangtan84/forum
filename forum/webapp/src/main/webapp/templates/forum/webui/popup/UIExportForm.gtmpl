@@ -10,7 +10,7 @@ import org.exoplatform.forum.service.Forum;
 			<div style="display:none;" id="divChecked" data-checked="0"><span></span></div>
 			<%
 			if(!uiform.mapObject.keySet().isEmpty()){%>
-			<table class="uiGrid table table-hover table-striped">
+			<table class="uiTable uiTableHover uiTableStriped">
 				<thead>
 					<tr>
 						<th style="width:16px;">

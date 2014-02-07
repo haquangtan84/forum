@@ -16,7 +16,7 @@
 			
 				<% _ctx.include("app:/templates/forum/webui/UIForumKeepStickPageIterator.gtmpl");  %>
 				
-			<table class="uiGrid table table-hover table-striped">
+			<table class="uiTable uiTableHover uiTableStriped">
 				<thead>
 					<tr>
 						<th style="width:15px;"></th>

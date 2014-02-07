@@ -18,7 +18,7 @@
 <div class="$uicomponent.id" id="$uicomponent.id">
 		<% uicomponent.renderChild(UIForumPageIterator.class) ; %>
 		<div class="forumContainer">
-			<table class="uiGrid table	no-border-cell table-hover table-striped">
+			<table class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder">
 				<thead>
 					<tr>
 						<th style="width:15px;"></th>

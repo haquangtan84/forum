@@ -39,7 +39,7 @@
   <div class="forumContainer" id="divChecked" data-checked="<%=uicomponent.getTotalChecked()%>">
   
     <div class=" ContentContainer UITopicList"  id="UITopicContent">
-      <table class="uiGrid table no-border-cell rounded-corners-bottom table-hover table-striped">
+      <table class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder uiTableRoundedBottom">
       	<caption class="rounded-corners-top">
       		<div class="pull-left textTitleCategories">
       			<%=_ctx.appRes("UITopicsTag.label.TagName")%>: <strong>$tagName_</strong>

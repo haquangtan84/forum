@@ -33,7 +33,7 @@
 	  
 		<% _ctx.include("app:/templates/forum/webui/UIForumKeepStickPageIterator.gtmpl");  %>
 		
-		<table class="uiGrid table table-hover table-striped">
+		<table class="uiTable uiTableHover uiTableStriped">
 			<thead>
 				<tr>
 					<th><%=_ctx.appRes("UIPageListPostByUser.label.PostName");%></th>

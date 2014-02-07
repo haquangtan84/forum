@@ -5,7 +5,7 @@
 	<div class="resizable">
 	<% uiform.begin() %>
 		<div class="horizontalLayout">
-			<table class="uiGrid table table-striped">
+			<table class="uiTable  uiTableStriped ">
 				<thead>
 					<tr>
 						<th style="width:80px; text-align:center"><%=_ctx.appRes("UIBBCodeManagerForm.label.TAG");%></th>

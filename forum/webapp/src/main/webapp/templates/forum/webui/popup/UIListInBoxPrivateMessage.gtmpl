@@ -14,7 +14,7 @@
 	%>
 
 	<% } %>
-	<table class="uiGrid table table-striped" id="PermissionInfo">
+	<table class="uiTable uiTableStriped " id="PermissionInfo">
 		<thead>
 			<tr>
 				<th><%=_ctx.appRes("UIPrivateMessageForm.label.MailList");%></th>

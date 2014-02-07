@@ -19,7 +19,7 @@
 <div class="uiPageListPostByUser" id="$uicomponent.id">
 
 	<div style="margin-bottom:10px"><% uicomponent.renderChild(UIForumPageIterator.class) ; %></div>
-	<table class="uiGrid table  no-border-cell table-hover table-striped">
+	<table class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder">
 		<thead>
 			<tr>
 				<th style="width:53%">
