@@ -9,7 +9,7 @@
 			String email = uicomponent.getEmail() ;
 			String content = uicomponent.getQuestion() ;
 			%>
-			<table cellpadding="0" class="uiGrid table no-border-cell " cellspacing="0" style="border: none">
+			<table cellpadding="0" class="uiTable uiTableWithoutBorder " cellspacing="0" style="border: none">
 				<tr>
 					<td width="100" style="text-align:right"> 
 						<%=_ctx.appRes("UIDeleteQuestion.label.Author")%>:

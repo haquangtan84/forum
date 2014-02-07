@@ -24,7 +24,7 @@
 		<!-- ======================================= view all users ======================================================= -->
 			<div class="addressContainer">
 				<div class="listAddress">
-					<table id="UIListUsers" class="uiGrid table no-border-cell rounded-corners-bottom table-hover table-striped">
+					<table id="UIListUsers" class="uiTable uiTableHover uiTableStriped uiTableWithoutBorder  uiTableRoundedBottom">
 						<thead>
 							<tr>
 							<th class="center">

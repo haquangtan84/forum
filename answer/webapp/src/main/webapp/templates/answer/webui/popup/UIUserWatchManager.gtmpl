@@ -2,7 +2,7 @@
 	org.exoplatform.forum.common.webui.WebUIUtils.addScripts("eXo.answer.UIAnswersPortlet.initConfirm('" + uicomponent.id + "');");
 %>
 <div class="uiUserWatchManager" id="$uicomponent.id">
-  <table class="uiGrid table table-hover table-striped">
+  <table class="uiTable uiTableHover uiTableStriped">
     <thead>
       <tr>
         <th><%=_ctx.appRes("UIUserWatchManager.label.pathCategory");%></th>
