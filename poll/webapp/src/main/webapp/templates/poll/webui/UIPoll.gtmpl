@@ -89,7 +89,7 @@
 			<div class="UITabPane">
 				<div class="UITabContentContainer">
 				 <% if(uicomponent.isGuestPermission() == false) { %> 
-					<table class="uiGrid table no-border-cell rounded-corners table-striped tableVoting">
+					<table class="uiTable uiTableRounded uiTableStriped uiTableWithoutBorder   tableVoting">
 						<thead>
 							<tr>
 								<th style="padding-left: 20px;"><%=_ctx.appRes("UIPoll.label.PollOptions"); %></th>
@@ -106,7 +106,7 @@
 					</div>
 
 					<% } else { %>
-					<table id="UIGrid" class="uiGrid table rounded-corners table-striped tableVoted">
+					<table id="UIGrid" class="uiTable uiTableRounded uiTableStriped  tableVoted">
 						<thead>
 							<tr>
 								<th style="width: 32%;"><%=_ctx.appRes("UIPoll.label.PollOptions"); %></th>

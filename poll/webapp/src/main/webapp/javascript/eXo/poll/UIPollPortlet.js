@@ -17,7 +17,7 @@
     setStyleOfTable : function(contId) {
       var cont = $('#'+contId);
       if (cont.exists()) {
-        $.each(cont.find('.uiGrid:first').find('th'), function(index, elm) {
+        $.each(cont.find('.uiTable:first').find('th'), function(index, elm) {
           if (index == 1) {
             elm.style.width = '60px';
           }
