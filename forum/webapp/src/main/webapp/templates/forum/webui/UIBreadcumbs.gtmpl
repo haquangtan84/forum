@@ -10,7 +10,7 @@
 		List breadcumbs = uicomponent.getBreadcumbs();
 		if(breadcumbs.size() > 1) {
 		%>
-		<ul class="breadcrumb">
+		<ul class="breadcrumbs">
 				<%
 					int t = 0 ;
 					for(namePath in breadcumbs) {

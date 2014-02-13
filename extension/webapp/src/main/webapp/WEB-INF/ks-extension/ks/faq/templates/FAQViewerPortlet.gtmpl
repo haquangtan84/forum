@@ -29,7 +29,7 @@
           navPath = uicomponent.arrangeList(navPath);
           if(navPath.size() > 1) {
             print "<div id=\"UIWikiBreadCrumb\" class=\"uiWikiBreadCrumb\">";
-  			    print "<ul class=\"breadcrumb\">";
+  			    print "<ul class=\"breadcrumbs\">";
 
   			    String link = ids[0], viewName;
             String url;

@@ -6,7 +6,7 @@
  // requireJS.addScripts("eXo.answer.UIAnswersPortlet.loadBreadcumbScroll();");
 %>
 <div class="uiGrayLightBox clearfix" id="$uicomponent.id">
-  <ul class="uiAnswersBreadcumbs breadcrumb pull-left">
+  <ul class="uiAnswersBreadcumbs breadcrumbs pull-left">
     
 	  <%  
 	    if(uicomponent.getBreadcumbs().size() > 1){
